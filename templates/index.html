@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乳癌病理画像判別アプリ</title>
+    <style>
+        /* 全体のスタイル */
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ヘッダー */
+        header {
+            background-color: #FFB6C1;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+
+        .header-logo {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        .header-logo:hover {
+            text-decoration: underline;
+        }
+
+        /* メイン */
+        .main {
+            margin: 2rem auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .file_choose {
+            border: none;
+            background-color: #FFFFFF;
+            font-size: 1rem;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+        }
+
+        .btn {
+            background-color: #FF6666;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+            transition: background-color 0.3s ease-out;
+        }
+
+        .btn:hover {
+            background-color: #FF4D4D;
+        }
+
+        .answer {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* フッター */
+        footer {
+            background-color: #FFB6C1;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+        }
+
+        small {
+            font-size: 0.8rem;
+            color: white;
+        }
+
+        .header_img {
+            height: 50px;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>   
+        <a class="header-logo" href="#">病理画像診断アプリ</a>
+    </header>
+
+    <div class="main">    
+        <h2> AIが送信された病理画像を乳癌かどうか識別します</h2>
+        <p>画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <button class="btn" type="submit">送信</button>
+        <div class="answer">{{answer}}</div>
+    </div>
+    <footer>
+        <small>&copy; 2023 病理画像診断アプリ</small>
+    </footer>
+</body>
+</html>        
+        

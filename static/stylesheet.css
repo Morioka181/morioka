@@ -1,0 +1,100 @@
+<style>
+    /* 全体のスタイル */
+    body {
+        background-color: #F5F5F5;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ヘッダー */
+    header {
+        background-color: #0077CC;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header_img {
+        height: 50px;
+    }
+
+    .header-logo {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    .header-logo:hover {
+        text-decoration: underline;
+    }
+
+    /* メイン */
+    .main {
+        margin: 2rem auto;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .file_choose {
+        border: none;
+        background-color: #FFFFFF;
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        background-color: #0077CC;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #005EA6;
+    }
+
+    .answer {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    /* フッター */
+    footer {
+        background-color: #0077CC;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    small {
+        font-size: 0.8rem;
+        color: white;
+    }
+</style>
